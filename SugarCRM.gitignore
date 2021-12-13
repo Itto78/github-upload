@@ -1,0 +1,22 @@
+@@ -1,12 +1,12 @@
+# # SugarCRM
+# Ignore las cosas personalizadas .htaccess.
+/ .htaccess
+# Ignore el directorio de caché por completo.
+# Esto romperá el comportamiento actual. Lo que a menudo conducía a
+# el mal uso del repositorio como reemplazo de respaldo.
+# Para el desarrollo, el directorio de caché se puede ignorar y
+# por lo tanto, se ignora.
+/ cache /
+/ cache / *
+! / cache / index.html
+# Ignorar algunos archivos y directorios del directorio personalizado.
+/ custom / history /
+@@ -22,6 +22,6 @@
+# Los archivos de registros se pueden ignorar de forma segura.
+* .log
+# Ignorar los nuevos directorios de carga.
+/ upload /
+/ upload / *
+! / upload / index.html
+/ upload_backup /
